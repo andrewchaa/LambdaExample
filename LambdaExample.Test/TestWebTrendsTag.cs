@@ -13,9 +13,10 @@ namespace LambdaExample.Test
         public void ShouldAddCurrentPath()
         {
             var webTrends = new WebTrendsTag();
-            string tag = webTrends.GetAllTags();
+            string path = "http://www.totaljobs.com";
+            webTrends.AddPath(path);
 
-            Assert.That(tag, Is.EqualTo(string.Empty));
+            Assert.That(webTrends.GetAllTags().Contains(path));
         }
     }
 }
