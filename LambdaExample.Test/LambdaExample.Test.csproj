@@ -44,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestWebTrendsTag.cs" />
+    <Compile Include="TestTrackingTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebTrendsTag.cs" />
+    <Compile Include="WebTrackingTag.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LambdaExample\LambdaExample.csproj">

@@ -20,6 +20,7 @@ Global
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|x86.Build.0 = Debug|Any CPU
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
