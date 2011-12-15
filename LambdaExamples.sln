@@ -1,18 +1,40 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExamples", "LambdaExamples\LambdaExamples.csproj", "{5C758228-FD6E-40DF-8CCF-233264E2CFA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample", "LambdaExamples\LambdaExample.csproj", "{5C758228-FD6E-40DF-8CCF-233264E2CFA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample.Test", "LambdaExample.Test\LambdaExample.Test.csproj", "{F30DB92D-90EE-45E1-8828-C20B064D2839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Debug|x86.ActiveCfg = Debug|x86
 		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Debug|x86.Build.0 = Debug|x86
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Release|Any CPU.ActiveCfg = Release|x86
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Release|x86.ActiveCfg = Release|x86
 		{5C758228-FD6E-40DF-8CCF-233264E2CFA2}.Release|x86.Build.0 = Release|x86
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F30DB92D-90EE-45E1-8828-C20B064D2839}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

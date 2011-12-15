@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LambdaExamples
+namespace LambdaExample
 {
     class Program
     {
@@ -17,6 +17,12 @@ namespace LambdaExamples
 
             Yell(new MonkeyBoy(), x => x.Scream());
             Yell(new MonkeyBoy(), x => x.Cheer());
+
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            int oddNumbers = numbers.Count(n => n % 2 == 1);
+
+            Console.WriteLine("all numbers: {0}", numbers.Count());
+            Console.WriteLine("odd numbers: {0}", oddNumbers);
 
             Console.ReadLine();
         }
