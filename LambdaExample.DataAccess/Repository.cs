@@ -29,7 +29,7 @@ namespace LambdaExample.DataAccess
         {
             var dataSet = new DataSet();
 
-            RunSqlHelper(
+            ConnectionHelper(
                 connection =>
                     {
                         var command = new SQLiteCommand
@@ -51,7 +51,7 @@ namespace LambdaExample.DataAccess
             return dataSet;
         }
 
-        private void RunSqlHelper(Action<SQLiteConnection> action)
+        private void ConnectionHelper(Action<SQLiteConnection> action)
         {
             using (var connection = new SQLiteConnection(ConnectionString))
             {
