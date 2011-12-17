@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample", "LambdaExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample.Domain", "LambdaExample.Domain\LambdaExample.Domain.csproj", "{41261F06-0C6F-4288-83AD-8321D9139203}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExample.DataAccess", "LambdaExample.DataAccess\LambdaExample.DataAccess.csproj", "{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,16 @@ Global
 		{41261F06-0C6F-4288-83AD-8321D9139203}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{41261F06-0C6F-4288-83AD-8321D9139203}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{41261F06-0C6F-4288-83AD-8321D9139203}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A9FAF27-37D9-4775-BE7C-FB00AE1A1C88}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

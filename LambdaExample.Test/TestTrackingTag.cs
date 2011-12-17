@@ -1,3 +1,5 @@
+using System.Linq;
+using LambdaExample.DataAccess;
 using LambdaExample.Domain;
 using NUnit.Framework;
 
@@ -41,7 +43,13 @@ namespace LambdaExample.Test
 
         }
 
-
+        [Test]
+        public void ShouldListHistoricalTags()
+        {
+            var repository = new Repository();
+            
+            Assert.That(repository.List().Count(), Is.GreaterThan(0));
+        }
 
 
     }
