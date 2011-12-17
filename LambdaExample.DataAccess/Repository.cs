@@ -13,7 +13,7 @@ namespace LambdaExample.DataAccess
         public IEnumerable<TagItem> List()
         {
             string spName = "SELECT * FROM Tracking";
-            var dataSet = runSql(spName);
+            var dataSet = RunSql(spName);
 
             var tagItems = dataSet.Tables[0].AsEnumerable()
                 .Select(row => new TagItem
@@ -25,30 +25,43 @@ namespace LambdaExample.DataAccess
             return tagItems;
         }
 
-        private DataSet runSql(string commandText)
+        private DataSet RunSql(string commandText)
         {
             var dataSet = new DataSet();
 
+            RunSqlHelper(
+                connection =>
+                    {
+                        var command = new SQLiteCommand
+                                          {
+                                              Connection = connection,
+                                              CommandType = CommandType.Text,
+                                              CommandText = commandText
+                                          };
+
+                        using (var dataAdapter = new SQLiteDataAdapter(command))
+                        {
+                            dataAdapter.Fill(dataSet);
+                        }
+
+                    });
+
+
+
+            return dataSet;
+        }
+
+        private void RunSqlHelper(Action<SQLiteConnection> action)
+        {
             using (var connection = new SQLiteConnection(ConnectionString))
             {
                 connection.Open();
 
-                var command = new SQLiteCommand
-                                  {
-                                      Connection = connection,
-                                      CommandType = CommandType.Text,
-                                      CommandText = commandText
-                                  };
-
-                using (var dataAdapter = new SQLiteDataAdapter(command))
-                {
-                    dataAdapter.Fill(dataSet);
-                }
+                action(connection);
 
                 connection.Close();
             }
 
-            return dataSet;
         }
     }
 
