@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LambdaExample
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -32,7 +32,11 @@ namespace LambdaExample
 
         private static decimal Calculator(decimal theNumber, Func<decimal, decimal> function )
         {
-            return function.Invoke(theNumber);
+            // do something before
+            decimal result = function.Invoke(theNumber);
+            // do something after
+
+            return result;
         }
 
         private static void Yell(MonkeyBoy item, Action<MonkeyBoy> action)

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using LambdaExample.Domain;
 using NUnit.Framework;
 
 namespace LambdaExample.Test
@@ -10,7 +7,8 @@ namespace LambdaExample.Test
     public class TestTrackingTag
     {
         private const string Path = "http://www.totaljobs.com";
-        private const string Module = "twitter";
+        private const string Twitter = "twitter";
+        private const string Facebook = "facebook";
 
         [Test]
         public void ShouldAddPath()
@@ -25,9 +23,10 @@ namespace LambdaExample.Test
         public void ShouldAddModule()
         {
             var track = new WebTrackingTag();
-            track.AddPath(Path).AddModule(Module);
+            track.AddPath(Path)
+                .AddModule(Twitter);
 
-            Assert.That(track.GetAllTags().Contains(Module), Is.True);
+            Assert.That(track.GetAllTags().Contains(Twitter), Is.True);
         }
 
         [Test]
@@ -35,11 +34,10 @@ namespace LambdaExample.Test
         {
             var tracking = new WebTrackingTag();
             tracking.Add(x => x.Path, Path)
-                .Add(x => x.Module, Module);
-
+                .Add(x => x.Module, Facebook);
 
             Assert.That(tracking.GetAllTags().Contains(Path), Is.True);
-            Assert.That(tracking.GetAllTags().Contains(Module), Is.True);
+            Assert.That(tracking.GetAllTags().Contains(Facebook), Is.True);
 
         }
 

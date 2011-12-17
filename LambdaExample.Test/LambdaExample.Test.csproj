@@ -44,14 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestTrackingTag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebTrackingTag.cs" />
+    <Compile Include="TestTrackingTag.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LambdaExample\LambdaExample.csproj">
-      <Project>{5C758228-FD6E-40DF-8CCF-233264E2CFA2}</Project>
-      <Name>LambdaExample</Name>
+    <ProjectReference Include="..\LambdaExample.Domain\LambdaExample.Domain.csproj">
+      <Project>{41261F06-0C6F-4288-83AD-8321D9139203}</Project>
+      <Name>LambdaExample.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
