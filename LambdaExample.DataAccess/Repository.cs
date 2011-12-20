@@ -8,7 +8,7 @@ namespace LambdaExample.DataAccess
 {
     public class Repository
     {
-        private const string ConnectionString = @"Data Source=C:\Users\Andrew\Projects\LambdaExample\LambdaExample.DataAccess\LambdaExample.sqlite";
+        private readonly string _connectionString = "Data Source=" + Environment.CurrentDirectory + "\\LambdaExample.sqlite";
 
         public IEnumerable<TagItem> List()
         {
@@ -53,7 +53,7 @@ namespace LambdaExample.DataAccess
 
         private void ConnectionHelper(Action<SQLiteConnection> action)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            using (var connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
 
